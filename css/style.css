@@ -25,10 +25,12 @@ li {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  @media only screen and (max-width: 87.5em){
-  font-size: 46%;
-  }
 }
+ @media only screen and (max-width: 87.5em){
+  html{
+    font-size: 46%;
+    }
+  }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
