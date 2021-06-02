@@ -24,7 +24,11 @@ li {
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  media only screen and (min-width: 87.5em){
+  font-size: 46%;
+  }
+}
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
