@@ -19,7 +19,7 @@
             <a href="#home" class="nav__list-link">Home</a>
           </li>
           <li class="nav__list-item">
-            <a href="#dev" class="nav__list-link">Devs Skills</a>
+            <a href="#dev" class="nav__list-link">Skills</a>
           </li>
           <li class="nav__list-item">
             <a href="#portfolio" class="nav__list-link">Portfolio</a>
@@ -36,31 +36,31 @@
   </div>
   <main>
     <section class="section__home" id="home">
-      <h1 class="heading-primary">
+      <h1 class="heading-primary animation">
         The front-end developer you've ever wanted.
-        </h2>
-        <h3 class="heading-tertiary">
-          I code beatufully and minimalist things.
-        </h3>
-        <article class="section__home-article">
-          <p class="paragraph">
-            Did you ever think about how much easier could be make beautiful and
-            responsive web pages? Well, so I'm the
-            answer!
-          </p>
-          <p class="paragraph">
-            Every time you looking for someone to trust, I'll be there for you.
-            Awaiting the time you always kept me alive.
-          </p>
-        </article>
-        <h3 class="heading-tertiary">About me</h3>
+      </h1>
+      <h3 class="heading-tertiary">
+        I code beatufully and minimalist things.
+      </h3>
+      <article class="section__home-article">
         <p class="paragraph">
-          Hi, I’m Lean. Nice to meet you. I started my journey as a freelance
-          developer nearly 6 six month ago. I’ve done work for xx, help with
-          startup and colaborated with talented people to create xxxx (business
-          and consumer use). I’m really confident, corius and perpetually
-          working on improving my devs skills.
+          Did you ever think about how much easier could be make beautiful and
+          responsive web pages? Well, so I'm the
+          answer!
         </p>
+        <p class="paragraph">
+          Every time you looking for someone to trust, I'll be there for you.
+          Awaiting the time you always kept me alive.
+        </p>
+      </article>
+      <h3 class="heading-tertiary">About me</h3>
+      <p class="paragraph">
+        Hi, I’m Lean. Nice to meet you. I started my journey as a freelance
+        developer nearly 6 six month ago. I’ve done work for xx, help with
+        startup and colaborated with talented people to create xxxx (business
+        and consumer use). I’m really confident, corius and perpetually
+        working on improving my devs skills.
+      </p>
     </section>
 
     <section class="section__dev" id="dev">
@@ -81,9 +81,6 @@
               <img src="img/css.png" alt="" class="dev-icon" />CSS
             </li>
             <li class="section__dev-item">
-              <img src="img/sass.png" alt="" class="dev-icon" />Scss
-            </li>
-            <li class="section__dev-item">
               <img src="img/javascript.png" alt="" class="dev-icon" />Javascript
             </li>
           </ul>
@@ -98,6 +95,9 @@
             <li class="section__dev-item">
               <img src="img/github.png" alt="" class="dev-icon">
               GitHub
+            </li>
+            <li class="section__dev-item">
+              <img src="img/sass.png" alt="" class="dev-icon" />Scss
             </li>
             <li class="section__dev-item">
               <img src="img/bootstrap.png" alt="" class="dev-icon">
@@ -184,7 +184,8 @@
       <div class="footer__container-contact">
         <h3 class="heading-tertiary">Want to contact me?</h3>
         <p class="paragraph u-margin-small">This is the mediums that I use</p>
-        <form action="mail" class="footer-form">
+        <form action="mailto:lean.dsoria@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm"
+          class="footer-form">
           <div class="form-container">
             <input type="text" class="name" placeholder="Name" minlength="4" required>
             <label for="name">Name</label>
