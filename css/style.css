@@ -285,13 +285,15 @@ body {
     height: 75vh;
     padding: 5rem; } }
 
-@media only screen and (min-width: 0em) {
-  .section__home {
-    min-height: 80rem;
-    max-height: 95vh;
-    padding-top: 2rem;
-    line-height: 1.6;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 90%); } }
+  @media only screen and (min-width: 0em) and (max-width: 31.25em) {
+    &__home {
+      min-height: 80rem;
+      max-height: 95vh;
+      padding-top: 2rem;
+      line-height: 1.6;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 90%);
+    }
+  }
 
 @media only screen and (min-width: 31.25em) and (orientation: portrait) {
   .section__home {
