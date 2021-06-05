@@ -99,8 +99,9 @@ body {
   @media only screen and (max-width: 50em) {
     .footer__container {
       padding: 6rem;
+      padding-bottom: 0;
       display: grid;
-      grid-template-rows: 3fr 1fr 1fr;
+      grid-template-rows: 3fr 1fr 0.5fr;
       grid-template-columns: 1fr;
       justify-items: center; }
       .footer__container-contact {
@@ -237,6 +238,7 @@ body {
 
 .section__home {
   height: 93vh;
+  min-height: 90rem;
   background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.7) 40%, rgba(148, 13, 182, 0.7) 60%), url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1002&q=80");
   background-size: cover;
   padding: 16rem;
@@ -252,11 +254,13 @@ body {
 
 @media only screen and (max-width: 93.75em) {
   .section__home {
+    min-height: 85rem;
     height: 70vh;
     padding: 8rem; } }
 
 @media only screen and (max-width: 75em) {
   .section__home {
+    min-height: 65rem;
     height: 60vh;
     padding: 6rem;
     line-height: 1.8; }
@@ -266,7 +270,7 @@ body {
 
 @media only screen and (max-width: 65.625em) {
   .section__home {
-    min-height: 90rem;
+    min-height: 73rem;
     height: 50vh;
     padding: 6rem;
     line-height: 1.4;
@@ -274,30 +278,24 @@ body {
 
 @media only screen and (max-width: 46.875em) {
   .section__home {
-    min-height: 40rem;
+    min-height: 105rem;
     height: 70vh;
     padding: 10rem;
     line-height: 2; } }
 
 @media only screen and (max-width: 37.5em) {
   .section__home {
-    min-height: 30rem;
-    height: 75vh;
+    min-height: 80rem;
+    height: 80vh;
     padding: 5rem; } }
 
-  @media only screen and (min-width: 0em) and (max-width: 31.25em) {
-    &__home {
-      min-height: 80rem;
-      max-height: 95vh;
-      padding-top: 2rem;
-      line-height: 1.6;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 90%);
-    }
-  }
-
-@media only screen and (min-width: 31.25em) and (orientation: portrait) {
+@media only screen and (min-width: 0em) and (max-width: 31.25em) {
   .section__home {
-    min-height: 80rem; } }
+    min-height: 105rem;
+    max-height: 95vh;
+    padding-top: 2rem;
+    line-height: 1.6;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 90%); } }
 
 .section__dev {
   display: grid;
@@ -306,11 +304,13 @@ body {
   margin-top: -18.3rem;
   padding: 18rem;
   height: 93vh;
+  min-height: 90rem;
   color: var(--color-primary-grey);
   text-align: center; }
   @media only screen and (max-width: 93.75em) {
     .section__dev {
       height: 75vh;
+      min-height: 85rem;
       padding: 10rem;
       margin-top: -15rem; } }
   @media only screen and (max-width: 75em) {
@@ -321,12 +321,14 @@ body {
   @media only screen and (max-width: 65.625em) {
     .section__dev {
       height: 55vh;
+      min-height: 85rem;
       padding: 10rem;
       margin-top: -15rem; } }
   @media only screen and (max-width: 46.875em) {
     .section__dev {
       height: 55vh;
-      padding: 8rem;
+      min-height: 85rem;
+      padding: 10rem;
       margin-top: -19rem; } }
   .section__dev .heading-secondary,
   .section__dev .heading-tertiary {
@@ -372,6 +374,7 @@ body {
 
 .section__portfolio {
   margin-top: -18.3rem;
+  min-height: 115rem;
   height: 110vh;
   padding: 20rem;
   display: flex;
@@ -383,34 +386,43 @@ body {
 
 @media only screen and (max-width: 93.75em) {
   .section__portfolio {
+    min-height: 115rem;
     height: 95vh;
     padding: 16rem;
-    padding-top: 18rem;
+    padding-top: 24rem;
     clip-path: polygon(0 15.6%, 100% 0, 100% 82%, 0 100%); } }
 
 @media only screen and (max-width: 75em) {
   .section__portfolio {
+    min-height: 100rem;
     height: 75vh;
     padding: 14rem;
+    padding-top: 18rem;
     margin-top: -15rem;
     clip-path: polygon(0 15.6%, 100% 0, 100% 84.5%, 0 100%); } }
 
 @media only screen and (max-width: 65.625em) {
   .section__portfolio {
+    min-height: 95rem;
     height: 60vh;
-    padding: 13rem;
-    margin-top: -15rem;
+    padding: 18rem;
+    padding-top: 20rem;
+    margin-top: -13rem;
     clip-path: polygon(0 15.6%, 100% 0, 100% 84.5%, 0 100%); } }
 
 @media only screen and (max-width: 46.875em) {
   .section__portfolio {
+    min-height: 85rem;
     padding: 6rem;
     padding-top: 12rem;
     clip-path: polygon(0 12.5%, 100% 0, 100% 88%, 0 100%); } }
 
 @media only screen and (max-width: 31.25em) {
   .section__portfolio {
-    clip-path: polygon(0 5%, 100% 0, 100% 94%, 0 100%); } }
+    min-height: 80rem;
+    padding: 4rem;
+    padding-top: 10rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); } }
 
 .section__portfolio-projects {
   display: grid;
@@ -434,7 +446,7 @@ body {
       border-radius: 1rem; }
     .section__portfolio-projects .project .back-card {
       position: absolute;
-      color: #940db6;
+      color: var(--color-primary-black);
       height: 60%;
       width: 60%;
       padding: 1rem;
@@ -540,6 +552,10 @@ body {
 @media only screen and (max-width: 50em) {
   .btn {
     padding: 1.3rem 44%; } }
+
+@media only screen and (max-width: 31.25em) {
+  .btn {
+    padding: 1.3rem 15.3rem; } }
 
 @keyframes moveInLeft {
   0% {
