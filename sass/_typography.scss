@@ -1,0 +1,80 @@
+// Colors
+$color-primary: #673ab7;
+$color-primary-dark: #512da8;
+$color-primary-light: #d1c4e9;
+
+$color-secondary: #4caf50;
+
+$color-white: #ffffff;
+$color-black: #212121;
+
+$color-grey: #757575;
+$color-light-grey: #bdbdbd;
+$color-ultra-light-grey: #e5e5e5;
+//
+.gen-padding {
+  padding: 0 10.5vw;
+}
+.header-primary {
+  font-size: 8rem;
+  color: $color-primary-dark;
+  font-weight: 500;
+}
+.header-secondary {
+  font-size: 5rem;
+  color: $color-black;
+  font-weight: 500;
+  &.white {
+    color: $color-white;
+  }
+  &.dark-purple {
+    color: $color-primary-dark;
+  }
+}
+.header-tertiary {
+  font-size: 3rem;
+  color: $color-grey;
+  font-weight: 500;
+  &.dark-purple {
+    color: $color-primary-dark;
+  }
+}
+.paragraph {
+  &.fs-20 {
+    font-size: 2rem;
+  }
+  &.fs-30 {
+    font-size: 3rem;
+  }
+  &.white {
+    color: $color-white;
+  }
+  &.black {
+    color: $color-black;
+  }
+  &.grey {
+    color: $color-grey;
+  }
+  &.dark-purple {
+    color: $color-primary-dark;
+  }
+  &.sbold {
+    font-weight: 500;
+  }
+}
+
+.margin-bot-1 {
+  margin-bottom: 1rem;
+}
+.margin-bot-2 {
+  margin-bottom: 2rem;
+}
+.margin-bot-3 {
+  margin-bottom: 3rem;
+}
+.margin-bot-4 {
+  margin-bottom: 4rem;
+}
+.margin-bot-6 {
+  margin-bottom: 6rem;
+}
