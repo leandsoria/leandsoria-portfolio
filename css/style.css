@@ -185,9 +185,12 @@ body {
   @media screen and (max-width: 1000px) {
     .main .section__hero .header-primary {
       margin-left: 0;
-      padding-left: 0; }
+      padding-left: 0;
+      margin-top: 15rem; }
     .main .section__hero .header-secondary {
-      margin-left: 12rem; } }
+      margin-left: 12rem; }
+    .main .section__hero .header-tertiary {
+      bottom: 35vh; } }
 
 .main .section__about {
   display: flex;
