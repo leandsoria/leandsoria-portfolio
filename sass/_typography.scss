@@ -14,6 +14,12 @@ $color-ultra-light-grey: #e5e5e5;
 //
 .gen-padding {
   padding: 0 10.5vw;
+  @media screen and (max-width: 1400px) {
+    padding: 0 0vw;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 0 5vw;
+  }
 }
 .header-primary {
   font-size: 8rem;
@@ -39,28 +45,26 @@ $color-ultra-light-grey: #e5e5e5;
     color: $color-primary-dark;
   }
 }
-.paragraph {
-  &.fs-20 {
-    font-size: 2rem;
-  }
-  &.fs-30 {
-    font-size: 3rem;
-  }
-  &.white {
-    color: $color-white;
-  }
-  &.black {
-    color: $color-black;
-  }
-  &.grey {
-    color: $color-grey;
-  }
-  &.dark-purple {
-    color: $color-primary-dark;
-  }
-  &.sbold {
-    font-weight: 500;
-  }
+.fs-20 {
+  font-size: 2rem;
+}
+.fs-30 {
+  font-size: 3rem;
+}
+.white {
+  color: $color-white;
+}
+.black {
+  color: $color-black;
+}
+.grey {
+  color: $color-grey;
+}
+.dark-purple {
+  color: $color-primary-dark;
+}
+.sbold {
+  font-weight: 500;
 }
 
 .margin-bot-1 {
