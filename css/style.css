@@ -19,7 +19,7 @@ html {
       font-size: 35%; } }
   @media screen and (max-width: 450px) {
     html {
-      font-size: 25%; } }
+      font-size: 30%; } }
 
 body {
   font-family: 'Josefin Sans', sans-serif;
