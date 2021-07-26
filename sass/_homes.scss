@@ -119,13 +119,17 @@
       .header-primary {
         margin-left: 0;
         padding-left: 0;
-        margin-top: 15rem;
       }
       .header-secondary {
         margin-left: 12rem;
       }
       .header-tertiary {
         bottom: 35vh;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .header-primary {
+        margin-top: 15rem;
       }
     }
   }
@@ -217,14 +221,23 @@
       width: 100%;
       &-box {
         background-color: $color-light-grey;
-        width: 37rem;
-        height: 22rem;
-        margin-bottom: 5rem;
+        width: 19.2vw;
+        height: 11.4vw;
+        max-width: 37rem;
+        max-height: 22rem;
         margin: 0 3vw 5rem;
       }
-      // &-box:not(:nth-child(3n + 3)) {
-      //   margin-right: 5vw;
-      // }
+    }
+    @media screen and (max-width: 1000px) {
+      .header-tertiary {
+        margin-bottom: 6rem;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .project__container-box {
+        width: 37rem;
+        height: 22rem;
+      }
     }
   }
   .section__contact {
