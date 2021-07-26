@@ -157,7 +157,8 @@ body {
 
 .main .section__hero {
   height: 75vh;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   .main .section__hero .header-primary {
     text-transform: uppercase;
     padding: 5rem;
@@ -175,13 +176,12 @@ body {
     left: -5vw;
     bottom: 2rem;
     z-index: -100;
-    filter: blur(10px);
+    filter: blur(6px);
     overflow-x: hidden; }
     .main .section__hero .bg__text-t {
       font-size: 16rem;
       color: #ede8f7;
-      line-height: 15rem;
-      overflow-x: hidden; }
+      line-height: 15rem; }
   @media screen and (max-width: 1000px) {
     .main .section__hero .header-primary {
       margin-left: 0;
