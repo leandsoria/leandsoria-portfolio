@@ -12,7 +12,12 @@
 <body>
   <haeder class="header">
     <nav class="nav">
-      <div class="logo">LeanS</div>
+      <div class="logo">
+        <div class="logo-circle">
+          <span class="logo-name">Lean-S</span><br>
+          <span class="logo-front">Front-End</span>
+        </div>
+      </div>
       <ul class="nav__list">
         <li class="nav__item"><a href="#" class="nav__link link">About me</a></li>
         <li class="nav__item"><a href="#" class="nav__link link">projects</a></li>
@@ -41,7 +46,7 @@
         <p class="paragraph fs-30 white sbold">Hi, I’m Lean. Nice to meet you. I started my journey as a freelance
           developer
           nearly 6 six month ago. I’ve done work for xx, help with startup and colaborated with talented people to
-          create xxxx (business and consumer use). I’m really confident, corius and perpetually working on improving my
+          create web. I’m really confident, corius and perpetually working on improving my
           devs skills.</p>
       </article>
       <article class="section__about-skills">
@@ -52,19 +57,51 @@
         <p class="paragraph fs-20 black margin-bot-3">
           HTML, CSS and Javascript
         </p>
-        <div class="icon-container">
-          <div class="icon-container-1"></div>
-          <div class="icon-container-1"></div>
-          <div class="icon-container-1"></div>
+        <div class="icon-container lang">
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#html_filetype"></use>
+            </svg>
+          </div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#css_filetype"></use>
+            </svg>
+          </div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#js_filetype"></use>
+            </svg>
+          </div>
         </div>
         <h3 class="header-tertiary dark-purple">Developer Tools</h3>
         <p class="paragraph fs-20 black margin-bot-3">Visual Studio Code, Scss, Git, Github, Figma</p>
         <div class="icon-container">
-          <div class="icon-container-1"></div>
-          <div class="icon-container-1"></div>
-          <div class="icon-container-1"></div>
-          <div class="icon-container-1"></div>
-          <div class="icon-container-1"></div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#vscode_file_type"></use>
+            </svg>
+          </div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#sass_file_type"></use>
+            </svg>
+          </div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#git_file_type"></use>
+            </svg>
+          </div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#github-logo"></use>
+            </svg>
+          </div>
+          <div class="icon-container-box">
+            <svg class="icon-container-1">
+              <use xlink:href="icons/sprite.svg#figma_logo"></use>
+            </svg>
+          </div>
         </div>
       </article>
     </section>
@@ -72,10 +109,27 @@
       <h2 class="header-secondary black margin-bot-3">My recent works and projects</h2>
       <h3 class="header-tertiary grey">Here there are some desings and projects that I've worked recently</h3>
       <div class="project__container">
-        <div class="project__container-box"></div>
-        <div class="project__container-box"></div>
-        <div class="project__container-box"></div>
-        <div class="project__container-box"></div>
+        <div class="project__container-box">
+          <a href="https://albertorivero.netlify.app/" target="_blank" class="project__container-link">
+            <img src="img/projects/web_alberto-rivero.png" alt="" class="project__container-image">
+            <h2 class="header-secondary">Clinica Neurologica</h2>
+          </a>
+        </div>
+        <div class="project__container-box">
+          <a href="https://natureweb-desing.netlify.app/" target="_blank" class="project__container-link">
+            <img src="img/projects/project_nat.png" alt="" class="project__container-image">
+          </a>
+        </div>
+        <div class="project__container-box">
+          <a href="https://nexterweb-desing.netlify.app/" target="_blank" class="project__container-link">
+            <img src="img/projects/project_nexter.png" alt="" class="project__container-image">
+          </a>
+        </div>
+        <div class="project__container-box">
+          <a href="https://bookingsweb-desing.netlify.app/" target="_blank" class="project__container-link">
+            <img src="img/projects/project_book.png" alt="" class="project__container-image">
+          </a>
+        </div>
         <div class="project__container-box"></div>
         <div class="project__container-box"></div>
       </div>
@@ -94,10 +148,24 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__icons">
-      <div class="footer__icons-1"></div>
-      <div class="footer__icons-1"></div>
-      <div class="footer__icons-1"></div>
+    <div class="footer__icon">
+      <a href="https://github.com/leandsoria" class="footer__link" target="_blank">
+        <svg class="footer__icon-1">
+          <use xlink:href="icons/sprite.svg#github-logo"></use>
+        </svg>
+      </a>
+      <div class="logo">
+        <div class="logo-circle logo-footer">
+          <span class="logo-name logo-footer">Lean-S</span><br>
+          <span class="logo-front  logo-footer">Front-End</span>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/in/leandro-s-528388136/" class="footer__link" target="_blank">
+        <svg class="footer__icon-1">
+          <use xlink:href="icons/sprite.svg#linkedin_icon"></use>
+        </svg>
+      </a>
+
     </div>
     <p class="paragraph">Leandro soria © 2021</p>
   </footer>
