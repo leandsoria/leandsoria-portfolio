@@ -123,6 +123,13 @@ body {
       border-color: #4caf50;
       color: #d1c4e9; }
 
+.section {
+  transition: all 0.7s ease; }
+
+.section-hiden {
+  opacity: 0;
+  transform: translateY(5rem); }
+
 .link {
   font-family: inherit;
   text-transform: uppercase;

@@ -29,3 +29,11 @@
     }
   }
 }
+
+.section {
+  transition: all 0.7s ease;
+}
+.section-hiden {
+  opacity: 0;
+  transform: translateY(5rem);
+}
