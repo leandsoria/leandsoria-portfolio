@@ -25,6 +25,11 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   overflow-x: hidden;
   box-sizing: border-box; }
+  body a:hover,
+  body a:visited,
+  body a:link,
+  body a:active {
+    text-decoration: none; }
 
 .gen-padding {
   padding: 0 10.5vw; }
@@ -329,30 +334,48 @@ body {
       max-width: 37rem;
       max-height: 22rem;
       margin: 0 3vw 5rem;
+      padding: 1rem;
       position: relative;
-      isolation: isolate;
       overflow: hidden; }
-      .main .section__projects .project__container-box::before {
+      .main .section__projects .project__container-box .project__container-link::before {
         content: '';
         height: 0%;
         width: 0%;
-        background-color: #673ab7;
-        opacity: 1;
+        background-color: #4caf50;
+        opacity: 0;
         filter: blur(1px);
-        backdrop-filter: blur(20px);
         position: absolute;
         z-index: 200;
-        transition: all 0.4s ease;
+        transition: all 0.6s ease;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-      .main .section__projects .project__container-box:hover::before {
+      .main .section__projects .project__container-box:hover .project__container-link::before {
         opacity: 1;
         width: 102%;
         height: 102%; }
       .main .section__projects .project__container-box:hover .project__container-image {
         width: 200%;
         height: 200%; }
+      .main .section__projects .project__container-box .paragraph {
+        font-size: 1.5rem;
+        transform: translateX(-100%); }
+      .main .section__projects .project__container-box .header-tertiary {
+        transform: translateX(100%); }
+      .main .section__projects .project__container-box .header-tertiary,
+      .main .section__projects .project__container-box .paragraph {
+        opacity: 0;
+        transition: all 0.3s ease;
+        text-decoration: none; }
+      .main .section__projects .project__container-box:hover .header-tertiary,
+      .main .section__projects .project__container-box:hover .paragraph {
+        position: relative;
+        z-index: 201;
+        color: #ffffff;
+        margin: 0;
+        padding: 1rem;
+        opacity: 1;
+        transform: translateX(0); }
     .main .section__projects .project__container-image {
       width: 100%;
       height: 100%;
