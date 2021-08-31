@@ -130,6 +130,9 @@ body {
   opacity: 0;
   transform: translateY(5rem); }
 
+.lazy-img {
+  filter: blur(5px); }
+
 .link {
   font-family: inherit;
   text-transform: uppercase;
